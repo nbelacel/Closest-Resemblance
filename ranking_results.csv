@@ -1,0 +1,105 @@
+Classifier, DataSet, Average
+K-CR1(Percentile: 0.9-0.1),Dermatology.csv,0.955070279
+K-CR1(Percentile: 0.9-0.1),HeartDisease.csv,0.605256699
+K-CR1(Percentile: 0.9-0.1),thyroid.csv,0.909443472
+K-CR1(Percentile: 0.9-0.1),pageblocks.csv,0.883145522
+K-CR1(Percentile: 0.9-0.1),BreastCancer.csv,0.969467966
+K-CR1(Percentile: 0.9-0.1),shuttle.csv,0.916819404
+K-CR1(Percentile: 0.9-0.1),newthyroid.csv,0.946565801
+K-CR1(Percentile: 0.9-0.1),Geobia.csv,0.916257854
+K-CR1(Percentile: 0.9-0.1),Glass.csv,0.74801821
+K-CR1(Percentile: 0.9-0.1),clevend.csv,0.605256699
+K-CR1(Percentile: 0.9-0.1),leaf.csv,0.867891914
+K-CR1(Percentile: 0.9-0.1),Sonar.csv,0.840215259
+K-CR1(Percentile: 0.9-0.1),SPECTF.csv,0.69600444
+K-CR2(t=1.1),Dermatology.csv,0.982696582
+K-CR2(t=1.1),HeartDisease.csv,0.670381003
+K-CR2(t=1.1),thyroid.csv,0.76309534
+K-CR2(t=1.1),pageblocks.csv,0.857172493
+K-CR2(t=1.1),BreastCancer.csv,0.973084875
+K-CR2(t=1.1),shuttle.csv,0.928880841
+K-CR2(t=1.1),newthyroid.csv,0.942693335
+K-CR2(t=1.1),Geobia.csv,0.895338805
+K-CR2(t=1.1),Glass.csv,0.719425635
+K-CR2(t=1.1),clevend.csv,0.670381003
+K-CR2(t=1.1),leaf.csv,0.861804183
+K-CR2(t=1.1),Sonar.csv,0.751180414
+K-CR2(t=1.1),SPECTF.csv,0.525757576
+KNN,Dermatology.csv,0.934149848
+KNN,HeartDisease.csv,0.505269075
+KNN,thyroid.csv,0.550699492
+KNN,pageblocks.csv,0.749945171
+KNN,BreastCancer.csv,0.971420637
+KNN,shuttle.csv,0.885387192
+KNN,newthyroid.csv,0.899264537
+KNN,Geobia.csv,0.692271346
+KNN,Glass.csv,0.789227939
+KNN,clevend.csv,0.505269075
+KNN,leaf.csv,0.777874405
+KNN,Sonar.csv,0.815928022
+KNN,SPECTF.csv,0.616385618
+RF,Dermatology.csv,0.978804313
+RF,HeartDisease.csv,0.580482555
+RF,thyroid.csv,0.919622638
+RF,pageblocks.csv,0.77972313
+RF,BreastCancer.csv,0.967736689
+RF,shuttle.csv,0.926167615
+RF,newthyroid.csv,0.943407954
+RF,Geobia.csv,0.910112299
+RF,Glass.csv,0.855223751
+RF,clevend.csv,0.580482555
+RF,leaf.csv,0.876962903
+RF,Sonar.csv,0.825688267
+RF,SPECTF.csv,0.627672828
+SVM,Dermatology.csv,0.977342358
+SVM,HeartDisease.csv,0.604925163
+SVM,thyroid.csv,0.5
+SVM,pageblocks.csv,0.802136729
+SVM,BreastCancer.csv,0.960721794
+SVM,shuttle.csv,0.917138574
+SVM,newthyroid.csv,0.987551153
+SVM,Geobia.csv,0.752641384
+SVM,Glass.csv,0.743645875
+SVM,clevend.csv,0.604925163
+SVM,leaf.csv,0.745592387
+SVM,Sonar.csv,0.759773039
+SVM,SPECTF.csv,0.654020388
+MLP,Dermatology.csv,0.980646165
+MLP,HeartDisease.csv,0.60041445
+MLP,thyroid.csv,0.505492424
+MLP,pageblocks.csv,0.849600869
+MLP,BreastCancer.csv,0.960001225
+MLP,shuttle.csv,0.9665171
+MLP,newthyroid.csv,0.737860832
+MLP,Geobia.csv,0.708658759
+MLP,Glass.csv,0.60413024
+MLP,clevend.csv,0.579348131
+MLP,leaf.csv,0.753690376
+MLP,Sonar.csv,0.806369149
+MLP,SPECTF.csv,0.618648971
+NB,Dermatology.csv,0.92306392
+NB,HeartDisease.csv,0.618395586
+NB,thyroid.csv,0.475096562
+NB,pageblocks.csv,0.768237004
+NB,BreastCancer.csv,0.963502155
+NB,shuttle.csv,0.872397329
+NB,newthyroid.csv,0.951353064
+NB,Geobia.csv,0.86685092
+NB,Glass.csv,0.685521927
+NB,clevend.csv,0.618395586
+NB,leaf.csv,0.843832372
+NB,Sonar.csv,0.698912315
+NB,SPECTF.csv,0.76064376
+NC,Dermatology.csv,0.730685082
+NC,HeartDisease.csv,0.561982629
+NC,thyroid.csv,0.597729125
+NC,pageblocks.csv,0.593968072
+NC,BreastCancer.csv,0.956321676
+NC,shuttle.csv,0.719616362
+NC,newthyroid.csv,0.865660778
+NC,Geobia.csv,0.658262465
+NC,Glass.csv,0.718486851
+NC,clevend.csv,0.561982629
+NC,leaf.csv,0.765641322
+NC,Sonar.csv,0.667328739
+NC,SPECTF.csv,0.772180541

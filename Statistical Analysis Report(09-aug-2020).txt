@@ -1,0 +1,676 @@
+=========================================================================================================================================================================================
+=========================================================================================================================================================================================
+StatisticalAnalysis.py -beta 0.2 -n 2 -opt 1 -files iris.csv BreastCancer.csv GEOBIA.csv HeartDisease.csv leaf.csv Pima.csv wine.csv yeast.csv
+=========================================================================================================================================================================================
+=========================================================================================================================================================================================
+
+Reading and Analysing Command Line Arguments
+
+
+Commands line arguments mentioned are
+-beta := 0.2
+-n := 2
+-files := ['iris.csv', 'BreastCancer.csv', 'GEOBIA.csv', 'HeartDisease.csv', 'leaf.csv', 'Pima.csv', 'wine.csv', 'yeast.csv']
+
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set iris.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set BreastCancer.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set GEOBIA.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set HeartDisease.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set leaf.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set Pima.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set wine.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set yeast.csv
+
+===========================10 fold AUC results for data sets===========================
+
+
+------------------iris.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.9537037037037037   1.0                  1.0                  1.0                  
+1                    1.0                  1.0                  1.0                  1.0                  
+2                    0.903030303030303    1.0                  1.0                  1.0                  
+3                    0.898538961038961    0.9345238095238096   0.9345238095238096   1.0                  
+4                    0.9037037037037038   0.9555555555555556   1.0                  0.9555555555555556   
+5                    0.9431818181818182   0.9431818181818182   0.9431818181818182   1.0                  
+6                    1.0                  1.0                  1.0                  1.0                  
+7                    1.0                  0.9431818181818182   0.9431818181818182   0.9431818181818182   
+8                    0.9431818181818182   0.9431818181818182   0.9431818181818182   0.9431818181818182   
+9                    0.9053571428571429   0.9053571428571429   0.9053571428571429   0.9458333333333333   
+
+------------------BreastCancer.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.8780487804878049   0.9705634987384357   0.9583683767872162   0.9411269974768712   
+1                    0.9222222222222223   0.96                 1.0                  1.0                  
+2                    0.8636363636363636   0.9580419580419581   0.9580419580419581   0.9694055944055944   
+3                    0.87                 0.955                0.945                0.935                
+4                    0.8958333333333333   0.9895833333333333   0.9895833333333333   0.9895833333333333   
+5                    0.8295454545454546   0.9659090909090908   0.9580419580419581   0.938811188811189    
+6                    0.8695652173913043   0.9782608695652174   0.9782608695652174   0.9782608695652174   
+7                    0.9239130434782609   0.9583333333333333   0.9057971014492754   0.9375               
+8                    0.8181818181818181   0.9501748251748252   0.930944055944056    0.930944055944056    
+9                    0.86                 1.0                  1.0                  1.0                  
+
+------------------GEOBIA.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.8302350427350428   0.6531517094017095   0.9739583333333334   0.8722489316239317   
+1                    0.8226190476190476   0.6674107142857143   0.8226190476190476   0.7621651785714286   
+2                    0.8452380952380953   0.6385912698412698   0.9367724867724867   0.823776455026455    
+3                    0.7914965986394559   0.8034013605442177   0.9710884353741497   0.69421768707483     
+4                    0.8636446886446887   0.6659798534798536   0.8230196886446887   0.7351390796703297   
+5                    0.9125000000000001   0.7669270833333334   0.9520833333333334   0.7700520833333333   
+6                    0.7514880952380952   0.6851190476190476   0.9053571428571429   0.8160714285714287   
+7                    0.9285714285714286   0.7486607142857142   0.8851190476190476   0.747842261904762    
+8                    0.8869047619047619   0.6381639194139194   0.8720238095238095   0.7715773809523809   
+9                    0.8372201872201872   0.7417582417582418   0.8911884411884413   0.7626170126170125   
+
+------------------HeartDisease.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.5722672064777328   0.5331983805668016   0.6328002699055332   0.6296018893387315   
+1                    0.542542574866413    0.5068603678929766   0.5693548418098643   0.549729702456464    
+2                    0.5125213675213676   0.5374501424501424   0.5756837606837607   0.6146082621082621   
+3                    0.6200304232804232   0.48204761904761906  0.5527830687830688   0.5407685185185185   
+4                    0.5732342638204708   0.5371231527093596   0.529976464148878    0.5612107279693486   
+5                    0.7642850923023337   0.4614594218042495   0.7201236502960641   0.742054162312783    
+6                    0.5753968253968254   0.4576719576719577   0.5436507936507936   0.6626984126984128   
+7                    0.6486053113553114   0.511521978021978    0.585724358974359    0.5932435897435898   
+8                    0.591206928129342    0.5235714285714286   0.5876204054566124   0.6312188328912468   
+9                    0.6002329192546584   0.5177795031055901   0.6452726017943409   0.5571946169772256   
+
+------------------leaf.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.7969248405103668   0.7908643952256006   0.8512260765550238   0.6781283762926377   
+1                    0.7944681186868688   0.7666311553030303   0.7998540088383838   0.7395833333333334   
+2                    0.8194895382395383   0.7765347891355955   0.8675820707070707   0.7424016955266955   
+3                    0.8321926652892562   0.8111642450901981   0.8942407024793387   0.7756528814538345   
+4                    0.7418831168831168   0.7373919203556301   0.8659586940836942   0.7276109307359307   
+5                    0.8034258115964398   0.790121610845295    0.8753488835725678   0.782944577352472    
+6                    0.8206436781609195   0.722121212121212    0.841314393939394    0.6878598484848485   
+7                    0.8191437022022885   0.7291499554367201   0.9150661620953366   0.6490007155405392   
+8                    0.7795589826839827   0.8227813852813852   0.8560155122655123   0.7711264430014431   
+9                    0.8734375            0.8048058712121213   0.8453598484848485   0.6977272727272726   
+
+------------------Pima.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.8380952380952381   0.8                  0.9333333333333333   0.8761904761904762   
+1                    0.8083333333333333   0.7749999999999999   0.9083333333333332   0.875                
+2                    0.7549342105263157   0.75                 0.8799342105263158   0.84375              
+3                    0.7857142857142858   0.7678571428571428   0.8392857142857143   0.9107142857142858   
+4                    0.8284313725490196   0.8611111111111112   0.9722222222222222   0.8055555555555556   
+5                    0.7532894736842105   0.84375              0.9375               0.875                
+6                    0.7824074074074074   0.8125               0.9814814814814814   0.9189814814814815   
+7                    0.8300000000000001   0.78                 0.95                 0.73                 
+8                    0.8504273504273504   0.7777777777777778   0.9252136752136753   0.8333333333333333   
+9                    0.8514492753623188   0.7699275362318841   0.9148550724637681   0.7481884057971014   
+
+------------------wine.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    1.0                  0.8321530321530322   1.0                  0.9093915343915344   
+1                    0.875                0.6732142857142858   0.9714285714285715   0.9714285714285715   
+2                    0.9444444444444443   0.8253968253968255   1.0                  1.0                  
+3                    0.9527777777777778   0.8570707070707071   1.0                  1.0                  
+4                    0.9398148148148149   0.7420940170940171   0.9686609686609687   0.9686609686609687   
+5                    1.0                  0.7256493506493507   1.0                  1.0                  
+6                    1.0                  0.8292207792207794   1.0                  0.9515151515151515   
+7                    0.9222222222222222   0.8962962962962964   1.0                  0.9611111111111111   
+8                    0.8573232323232324   0.8948412698412698   1.0                  1.0                  
+9                    0.9061609686609687   0.7606125356125356   0.9663461538461539   0.8979700854700855   
+
+------------------yeast.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.5400615390718018   0.6478839730398702   0.6656343643299442   0.658722959012901    
+1                    0.5834351621359439   0.721143274847452    0.7371548239036577   0.6457724190990684   
+2                    0.5944654825562985   0.6963216406347029   0.7165764858647612   0.678747702794641    
+3                    0.562384596665078    0.713287834146392    0.7364782933638777   0.6705381460644086   
+4                    0.5478668497602703   0.6501150432910424   0.6992888486294828   0.6400283699441933   
+5                    0.5923908846638578   0.7509357482224213   0.7857858341659094   0.6938529380055324   
+6                    0.5561336187492143   0.6900415183733266   0.7346420774433217   0.696519001829222    
+7                    0.55864860985116     0.7394284866365443   0.7168758654451255   0.6873973888787412   
+8                    0.5598619636660171   0.7051072652470115   0.7412640938054662   0.6485791858079312   
+9                    0.5989493787655629   0.8011103361761585   0.7972440229476987   0.7677409100813175   
+
+=======================Average Accuracies for datasets=======================
+
+dataset              KCR                  KNN                  RF                   SVM                  
+iris.csv             0.9450697450697451   0.9624981962481964   0.9669426406926409   0.9787752525252525   
+BreastCancer.csv     0.8730946233276562   0.9685866909096192   0.9624037653163015   0.9620632039536261   
+GEOBIA.csv           0.8469917945810803   0.7009163913963021   0.9033229766265481   0.7755707499345893   
+HeartDisease.csv     0.6000322912404877   0.5068683951842103   0.5942990215503274   0.6082328715014583   
+leaf.csv             0.8081167954252779   0.7751566540006788   0.861196635302117    0.7252036074449008   
+Pima.csv             0.808308194709948    0.7937923567977915   0.9242159042859843   0.8416713538072234   
+wine.csv             0.939774346024346    0.8036549099049098   0.9906435693935693   0.9660077422577423   
+yeast.csv            0.5694198085885205   0.7115375120614923   0.7330944709899245   0.6787899021517958   
+
+===========================================
+Pair T Test
+===========================================
+
+
+----------------------
+pair t test for dataset iris.csv for algorithms KCR and knn
+----------------------
+stat=-1.319, p value=0.21984
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset iris.csv for algorithms KCR and svm
+----------------------
+stat=-2.193, p value=0.05599
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset iris.csv for algorithms KCR and rf
+----------------------
+stat=-1.447, p value=0.18175
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset BreastCancer.csv for algorithms KCR and knn
+----------------------
+stat=-8.154, p value=0.00002
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset BreastCancer.csv for algorithms KCR and svm
+----------------------
+stat=-7.930, p value=0.00002
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset BreastCancer.csv for algorithms KCR and rf
+----------------------
+stat=-6.491, p value=0.00011
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset GEOBIA.csv for algorithms KCR and knn
+----------------------
+stat=6.023, p value=0.00020
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset GEOBIA.csv for algorithms KCR and svm
+----------------------
+stat=2.842, p value=0.01934
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset GEOBIA.csv for algorithms KCR and rf
+----------------------
+stat=-2.155, p value=0.05951
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset HeartDisease.csv for algorithms KCR and knn
+----------------------
+stat=3.278, p value=0.00956
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset HeartDisease.csv for algorithms KCR and svm
+----------------------
+stat=-0.421, p value=0.68363
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset HeartDisease.csv for algorithms KCR and rf
+----------------------
+stat=0.356, p value=0.73031
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset leaf.csv for algorithms KCR and knn
+----------------------
+stat=2.411, p value=0.03917
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset leaf.csv for algorithms KCR and svm
+----------------------
+stat=4.165, p value=0.00243
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset leaf.csv for algorithms KCR and rf
+----------------------
+stat=-3.775, p value=0.00438
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset Pima.csv for algorithms KCR and knn
+----------------------
+stat=0.864, p value=0.40980
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset Pima.csv for algorithms KCR and svm
+----------------------
+stat=-1.170, p value=0.27217
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset Pima.csv for algorithms KCR and rf
+----------------------
+stat=-7.504, p value=0.00004
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset wine.csv for algorithms KCR and knn
+----------------------
+stat=4.756, p value=0.00104
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset wine.csv for algorithms KCR and svm
+----------------------
+stat=-1.228, p value=0.25053
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset wine.csv for algorithms KCR and rf
+----------------------
+stat=-3.447, p value=0.00731
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset yeast.csv for algorithms KCR and knn
+----------------------
+stat=-13.530, p value=0.00000
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset yeast.csv for algorithms KCR and svm
+----------------------
+stat=-11.200, p value=0.00000
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset yeast.csv for algorithms KCR and rf
+----------------------
+stat=-19.747, p value=0.00000
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+===========================================
+Wilcoxon Test
+===========================================
+
+
+----------------------
+Wilcoxon test for dataset for algorithms KCR and knn
+----------------------
+stat=14.000, p=0.575
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+Wilcoxon test for dataset for algorithms KCR and svm
+----------------------
+stat=11.000, p=0.327
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+Wilcoxon test for dataset for algorithms KCR and rf
+----------------------
+stat=1.000, p=0.017
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+===========================================
+Friedman Test
+===========================================
+
+stat=7.950, p=0.047
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+
+=========================================================================================================================================================================================
+=========================================================================================================================================================================================
+StatisticalAnalysis.py -beta 0.3 -n 3 -opt 1 -files iris.csv BreastCancer.csv GEOBIA.csv HeartDisease.csv leaf.csv Pima.csv wine.csv yeast.csv
+=========================================================================================================================================================================================
+=========================================================================================================================================================================================
+
+Commands line arguments mentioned are
+-beta := 0.3
+-n := 3
+-files := ['iris.csv', 'BreastCancer.csv', 'GEOBIA.csv', 'HeartDisease.csv', 'leaf.csv', 'Pima.csv', 'wine.csv', 'yeast.csv']
+
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set iris.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set BreastCancer.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set GEOBIA.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set HeartDisease.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set leaf.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set Pima.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set wine.csv
+Calculating AUC's using 10 fold validations for KCR KNN RF and SVM with the data set yeast.csv
+
+===========================10 fold AUC results for data sets===========================
+
+
+------------------iris.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.9074074074074074   1.0                  1.0                  1.0                  
+1                    1.0                  1.0                  1.0                  1.0                  
+2                    0.7575757575757575   1.0                  1.0                  1.0                  
+3                    0.9345238095238096   0.9345238095238096   0.9345238095238096   1.0                  
+4                    0.8962962962962964   0.9555555555555556   1.0                  0.9555555555555556   
+5                    0.9431818181818182   0.9431818181818182   0.9431818181818182   1.0                  
+6                    0.9500000000000001   1.0                  1.0                  1.0                  
+7                    0.8863636363636364   0.9431818181818182   0.9431818181818182   0.9431818181818182   
+8                    0.8863636363636364   0.9431818181818182   0.9431818181818182   0.9431818181818182   
+9                    0.8785714285714286   0.9053571428571429   0.9053571428571429   0.9458333333333333   
+
+------------------BreastCancer.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.7682926829268293   0.9705634987384357   0.9583683767872162   0.9411269974768712   
+1                    0.8444444444444444   0.96                 1.0                  1.0                  
+2                    0.9318181818181819   0.9580419580419581   0.9580419580419581   0.9694055944055944   
+3                    0.76                 0.955                0.945                0.935                
+4                    0.84375              0.9895833333333333   0.9895833333333333   0.9895833333333333   
+5                    0.8181818181818181   0.9659090909090908   0.9580419580419581   0.938811188811189    
+6                    0.8043478260869565   0.9782608695652174   0.9782608695652174   0.9782608695652174   
+7                    0.8913043478260869   0.9583333333333333   0.9057971014492754   0.9375               
+8                    0.7386363636363636   0.9501748251748252   0.930944055944056    0.930944055944056    
+9                    0.8300000000000001   1.0                  1.0                  1.0                  
+
+------------------GEOBIA.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.8127136752136752   0.6531517094017095   0.9739583333333334   0.8722489316239317   
+1                    0.736904761904762    0.6674107142857143   0.8226190476190476   0.7621651785714286   
+2                    0.841765873015873    0.6385912698412698   0.9367724867724867   0.823776455026455    
+3                    0.8894557823129252   0.8034013605442177   0.9710884353741497   0.69421768707483     
+4                    0.8392857142857143   0.6659798534798536   0.8230196886446887   0.7351390796703297   
+5                    0.7833333333333333   0.7669270833333334   0.9520833333333334   0.7700520833333333   
+6                    0.7601190476190477   0.6851190476190476   0.9053571428571429   0.8160714285714287   
+7                    0.8040178571428571   0.7486607142857142   0.8851190476190476   0.747842261904762    
+8                    0.8448946886446886   0.6381639194139194   0.8720238095238095   0.7715773809523809   
+9                    0.8097069597069597   0.7417582417582418   0.8911884411884413   0.7626170126170125   
+
+------------------HeartDisease.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.6580499325236169   0.5331983805668016   0.6328002699055332   0.6296018893387315   
+1                    0.5378031176719333   0.5068603678929766   0.5693548418098643   0.549729702456464    
+2                    0.5790990028490028   0.5374501424501424   0.5756837606837607   0.6146082621082621   
+3                    0.5529814814814815   0.48204761904761906  0.5527830687830688   0.5407685185185185   
+4                    0.6443021346469623   0.5371231527093596   0.529976464148878    0.5612107279693486   
+5                    0.5964733542319749   0.4614594218042495   0.7201236502960641   0.742054162312783    
+6                    0.6488095238095238   0.4576719576719577   0.5436507936507936   0.6626984126984128   
+7                    0.5638131552355691   0.511521978021978    0.585724358974359    0.5932435897435898   
+8                    0.6090182834406973   0.5235714285714286   0.5876204054566124   0.6312188328912468   
+9                    0.617198642742121    0.5177795031055901   0.6452726017943409   0.5571946169772256   
+
+------------------leaf.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.7829180493388898   0.7908643952256006   0.8512260765550238   0.6781283762926377   
+1                    0.7957504734848485   0.7666311553030303   0.7998540088383838   0.7395833333333334   
+2                    0.7805059523809523   0.7765347891355955   0.8675820707070707   0.7424016955266955   
+3                    0.8080879820936638   0.8111642450901981   0.8942407024793387   0.7756528814538345   
+4                    0.7393113159242192   0.7373919203556301   0.8659586940836942   0.7276109307359307   
+5                    0.7609616967639038   0.790121610845295    0.8753488835725678   0.782944577352472    
+6                    0.7827272727272728   0.722121212121212    0.841314393939394    0.6878598484848485   
+7                    0.8437370622735897   0.7291499554367201   0.9150661620953366   0.6490007155405392   
+8                    0.7250405844155845   0.8227813852813852   0.8560155122655123   0.7711264430014431   
+9                    0.8703361742424243   0.8048058712121213   0.8453598484848485   0.6977272727272726   
+
+------------------Pima.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.6666666666666667   0.8                  0.9333333333333333   0.8761904761904762   
+1                    0.675                0.7749999999999999   0.9083333333333332   0.875                
+2                    0.6052631578947368   0.75                 0.8799342105263158   0.84375              
+3                    0.6428571428571428   0.7678571428571428   0.8392857142857143   0.9107142857142858   
+4                    0.6781045751633987   0.8611111111111112   0.9722222222222222   0.8055555555555556   
+5                    0.6266447368421053   0.84375              0.9375               0.875                
+6                    0.6296296296296297   0.8125               0.9814814814814814   0.9189814814814815   
+7                    0.5800000000000001   0.78                 0.95                 0.73                 
+8                    0.6923076923076923   0.7777777777777778   0.9252136752136753   0.8333333333333333   
+9                    0.6956521739130435   0.7699275362318841   0.9148550724637681   0.7481884057971014   
+
+------------------wine.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.9481481481481481   0.8321530321530322   1.0                  0.9093915343915344   
+1                    0.9714285714285715   0.6732142857142858   0.9714285714285715   0.9714285714285715   
+2                    0.9652777777777777   0.8253968253968255   1.0                  1.0                  
+3                    1.0                  0.8570707070707071   1.0                  1.0                  
+4                    1.0                  0.7420940170940171   0.9686609686609687   0.9686609686609687   
+5                    0.9623015873015873   0.7256493506493507   1.0                  1.0                  
+6                    1.0                  0.8292207792207794   1.0                  0.9515151515151515   
+7                    0.9703703703703703   0.8962962962962964   1.0                  0.9611111111111111   
+8                    1.0                  0.8948412698412698   1.0                  1.0                  
+9                    0.9663461538461539   0.7606125356125356   0.9663461538461539   0.8979700854700855   
+
+------------------yeast.csv------------------
+
+Fold                 KCR                  KNN                  RF                   SVM                  
+0                    0.686722157704441    0.6478839730398702   0.6656343643299442   0.658722959012901    
+1                    0.6182827622539114   0.721143274847452    0.7371548239036577   0.6457724190990684   
+2                    0.6831345591721114   0.6963216406347029   0.7165764858647612   0.678747702794641    
+3                    0.6191748652147077   0.713287834146392    0.7364782933638777   0.6705381460644086   
+4                    0.6146110838306936   0.6501150432910424   0.6992888486294828   0.6400283699441933   
+5                    0.6424429332014453   0.7509357482224213   0.7857858341659094   0.6938529380055324   
+6                    0.6236033155079798   0.6900415183733266   0.7346420774433217   0.696519001829222    
+7                    0.6381049279912693   0.7394284866365443   0.7168758654451255   0.6873973888787412   
+8                    0.6401297008082547   0.7051072652470115   0.7412640938054662   0.6485791858079312   
+9                    0.6911233096539995   0.8011103361761585   0.7972440229476987   0.7677409100813175   
+
+=======================Average Accuracies for datasets=======================
+
+dataset              KCR                  KNN                  RF                   SVM                  
+iris.csv             0.9040283790283791   0.9624981962481964   0.9669426406926409   0.9787752525252525   
+BreastCancer.csv     0.823077566492068    0.9685866909096192   0.9624037653163015   0.9620632039536261   
+GEOBIA.csv           0.8122197693179837   0.7009163913963021   0.9033229766265481   0.7755707499345893   
+HeartDisease.csv     0.6007548628632884   0.5068683951842103   0.5942990215503274   0.6082328715014583   
+leaf.csv             0.7889376563645348   0.7751566540006788   0.861196635302117    0.7252036074449008   
+Pima.csv             0.6492125775274417   0.7937923567977915   0.9242159042859843   0.8416713538072234   
+wine.csv             0.9783872608872608   0.8036549099049098   0.9906435693935693   0.9660077422577423   
+yeast.csv            0.6457329615338814   0.7115375120614923   0.7330944709899245   0.6787899021517958   
+
+===========================================
+Pair T Test
+===========================================
+
+
+----------------------
+pair t test for dataset iris.csv for algorithms KCR and knn
+----------------------
+stat=-2.577, p value=0.02986
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset iris.csv for algorithms KCR and svm
+----------------------
+stat=-3.738, p value=0.00464
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset iris.csv for algorithms KCR and rf
+----------------------
+stat=-2.719, p value=0.02365
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset BreastCancer.csv for algorithms KCR and knn
+----------------------
+stat=-7.630, p value=0.00003
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset BreastCancer.csv for algorithms KCR and svm
+----------------------
+stat=-8.022, p value=0.00002
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset BreastCancer.csv for algorithms KCR and rf
+----------------------
+stat=-6.755, p value=0.00008
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset GEOBIA.csv for algorithms KCR and knn
+----------------------
+stat=5.187, p value=0.00057
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset GEOBIA.csv for algorithms KCR and svm
+----------------------
+stat=1.495, p value=0.16916
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset GEOBIA.csv for algorithms KCR and rf
+----------------------
+stat=-5.004, p value=0.00073
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset HeartDisease.csv for algorithms KCR and knn
+----------------------
+stat=6.098, p value=0.00018
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset HeartDisease.csv for algorithms KCR and svm
+----------------------
+stat=-0.379, p value=0.71353
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset HeartDisease.csv for algorithms KCR and rf
+----------------------
+stat=0.298, p value=0.77281
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset leaf.csv for algorithms KCR and knn
+----------------------
+stat=0.748, p value=0.47350
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset leaf.csv for algorithms KCR and svm
+----------------------
+stat=2.567, p value=0.03034
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset leaf.csv for algorithms KCR and rf
+----------------------
+stat=-4.530, p value=0.00143
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset Pima.csv for algorithms KCR and knn
+----------------------
+stat=-9.204, p value=0.00001
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset Pima.csv for algorithms KCR and svm
+----------------------
+stat=-8.255, p value=0.00002
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset Pima.csv for algorithms KCR and rf
+----------------------
+stat=-15.203, p value=0.00000
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset wine.csv for algorithms KCR and knn
+----------------------
+stat=7.596, p value=0.00003
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+----------------------
+pair t test for dataset wine.csv for algorithms KCR and svm
+----------------------
+stat=1.136, p value=0.28535
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset wine.csv for algorithms KCR and rf
+----------------------
+stat=-1.544, p value=0.15706
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+pair t test for dataset yeast.csv for algorithms KCR and knn
+----------------------
+stat=-4.223, p value=0.00223
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset yeast.csv for algorithms KCR and svm
+----------------------
+stat=-3.098, p value=0.01276
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+----------------------
+pair t test for dataset yeast.csv for algorithms KCR and rf
+----------------------
+stat=-5.736, p value=0.00028
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+
+===========================================
+Wilcoxon Test
+===========================================
+
+
+----------------------
+Wilcoxon test for dataset for algorithms KCR and knn
+----------------------
+stat=18.000, p=1.000
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+Wilcoxon test for dataset for algorithms KCR and svm
+----------------------
+stat=11.000, p=0.327
+Algorithms are classifing the data similarly with 95% confidence
+
+----------------------
+Wilcoxon test for dataset for algorithms KCR and rf
+----------------------
+stat=1.000, p=0.017
+Algorithms are classifing the data differently (Inconsistant) with 95% confidence
+but the Algorithms are classifing the data similarly with 99% confidence
+
+===========================================
+Friedman Test
+===========================================
+
+stat=7.200, p=0.066
+Algorithms are classifing the data similarly with 95% confidence
+
+Process finished with exit code 0
+
+
